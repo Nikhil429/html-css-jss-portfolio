@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">John Doe</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mavuru Nikhil</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.png" alt="Nikhil profile Picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mavuru Nikhil</h1>
+            <p class="section__text__p2">Aspiring Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/mavuru-nikhil-453467241/'" />
+                <img src="./assests/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/Nikhil429'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assests/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Experience icon" class="icon" />
+                        <h2>Skills</h2>
+                        <h3>Programming Languages</h3>
+                    <p>C,C++,Python,Java</p>
+                    <h3>Web Development</h3>
+                    <p>HTML,JAVASCRIPT,CSS</p>
+                    <h3>Other Skills</h3>
+                    <p> Leadership,Teamwork,Time management</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="Education icon" class="icon" />
+                        <h2>Education</h2>
+                        <h4>SRM University, AP - Computer Science  </h4>
+                        <p>CGPA: 9.03   </p>
+                        <p>2021 - 2025</p>
+                        <h3>Sri Chaitanya Juniour College</h3>
+                        <p>Percentage:97.80/100.00 
+                          </p>
+                          <p>2019-2021</p>
+                        <h3>Sri Chaitanya School</h3>
+                        <p>GPA:10.0/10.0  </p>
+                        <p>2017-2019</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Motivated and detail-oriented Computer Science and Engineering student adept in coding.Strong analytical and communication skills.Ready to contribute to innovative solutions in a professional setting. Eager
+                        to contribute to Product Based Companies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assests/intern.png" alt="intern icon" class="icon" />
+                    <h2 class="experience-sub-title">Internship on Data Analysis Using Python </h2>
+                   <p>Successfully completed a internship with APSSDC, focusing on Data Analysis using Python. Applied
+                    data manipulation, statistical analysis, and visualization techniques to derive meaningful insights.
+                    • Effectively contributed to real-world projects, enhancing analytical and problem-solving skills in the
+                    field of data analysis.
+                    </p>
+                    <h1>APSSDC</h1>
+                </div>
+                <div class="details-container">
+                    <img src="./assests/rsrchh.png" alt="Research Icon" class="icon" />
+                    <h2 class="experience-sub-title">Research On Cancellable Biometrics</h2>
+                    <p>Conducted groundbreaking research on cancellable biometrics at SRM University, contributing to the
+                        field of secure identity verification. Investigated innovative techniques to enhance biometric template
+                        security, ensuring privacy and protection against unauthorized access.</p>
+                        <h2>SRM UNIVERSITY</h2>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Student Report Managment System</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nikhil429/Student-Report-Management'">
+                            Github
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Music Player Using Python</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Chatting Application</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">nikhil_mavuru@srmap.edu.in</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/mavuru-nikhil-453467241/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
